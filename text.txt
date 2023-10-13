@@ -1,1 +1,29 @@
 S.No.- Name- Employee ID
+
+
+
+[12:39 PM] Mirupala Likhitha
+
+[1mPlan:[0m 4 to add, 0 to change, 0 to destroy.[0m[0m[1mmodule.Bucket.azurerm_storage_account.containerblob: Creating...[0m[0m[0m[1mmodule.Bucket.azurerm_storage_account.containerblob: Still creating... [10s elapsed][0m[0m[0m[1mmodule.Bucket.azurerm_storage_account.containerblob: Still creating... [20s elapsed][0m[0m[33m���[0m[0m
+[33m���[0m [0m[1m[33mWarning: [0m[0m[1mArgument is deprecated[0m
+[33m���[0m [0m
+[33m���[0m [0m[0m  with module.Bucket.azurerm_monitor_diagnostic_setting.diagnostic,
+[33m���[0m [0m  on Bucket/main.tf line 79, in resource "azurerm_monitor_diagnostic_setting" "diagnostic":
+[33m���[0m [0m  79: resource "azurerm_monitor_diagnostic_setting" "diagnostic" [4m{[0m[0m
+[33m���[0m [0m
+[33m���[0m [0m`retention_policy` has been deprecated in favor of
+[33m���[0m [0m`azurerm_storage_management_policy` resource - to learn more
+[33m���[0m [0mhttps://aka.ms/diagnostic_settings_log_retention
+[33m���[0m [0m
+[33m���[0m [0m(and 7 more similar warnings elsewhere)
+[33m���[0m[0m
+[31m���[0m[0m
+[31m���[0m [0m[1m[31mError: [0m[0m[1mretrieving Storage Account (Subscription: "e8ca3c89-8aca-4820-9ff9-0545518ee216"
+[31m���[0m [0mResource Group Name: "az-adl-tp-prod-rg"
+[31m���[0m [0mStorage Account Name: "adltpprodgrafana"): storage.AccountsClient#GetProperties: Failure responding to request: StatusCode=404 -- Original Error: autorest/azure: Service returned an error. Status=404 Code="StorageAccountNotFound" Message="The storage account adltpprodgrafana was not found."[0m
+[31m���[0m [0m
+[31m���[0m [0m[0m  with module.Bucket.azurerm_storage_account.containerblob,
+[31m���[0m [0m  on Bucket/main.tf line 22, in resource "azurerm_storage_account" "containerblob":
+[31m���[0m [0m  22: resource "azurerm_storage_account" "containerblob" [4m{[0m[0m
+[31m���[0m [0m
+[31m���[0m[0m
